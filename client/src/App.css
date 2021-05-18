@@ -1,0 +1,125 @@
+.header {
+  color: black;
+  background-color: rgb(36, 34, 34);
+  border-bottom: 1px double rgb(82, 80, 80);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+}
+
+.header-logo {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+.btn-header {
+  margin-right: 1rem;
+  color: grey;
+  background-color: rgb(197, 197, 193);
+  border-radius: 12px;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  display: flex;
+  margin-right: 20px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  padding: 10px;
+  width: auto;
+  cursor: pointer;
+}
+
+.main {
+  background-color: white;
+  padding: 15px;
+  height: calc(100vh - 65px);
+  width: 100%;
+  height: 100%;
+}
+
+.body-class {
+  display: flex;
+  height: calc(100vh - 65px);
+}
+
+.header-icon {
+  display: none;
+}
+
+.header-icon div {
+  background-color: rgb(255, 65, 65);
+  height: 5px;
+  width: 31px;
+  margin: 5px;
+  margin-right: 1rem;
+}
+
+@media screen and(min-width:601px) {
+  .header-links {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .mobile-menu {
+    background-color: rgb(36, 34, 34);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 30px 20px 30px;
+    right: 0;
+    top: 65px;
+    position: absolute;
+    z-index: 11;
+  }
+  .menu-back-icon {
+    width: 30px;
+    margin-right: 1rem;
+    color: #7fccff;
+  }
+}
+@media (min-width: 600px) {
+  .mobile-menu {
+    display: none;
+  }
+  .menu-back-icon {
+    display: none;
+  }
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}

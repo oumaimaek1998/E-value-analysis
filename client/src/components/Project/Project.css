@@ -1,0 +1,35 @@
+.create-page {
+  width: 100%;
+  height: calc(100% -65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-page-form {
+  width: 800px;
+  padding: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.btn-primary {
+  background-color: rgb(255, 65, 65);
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
